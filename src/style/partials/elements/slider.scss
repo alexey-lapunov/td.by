@@ -1,0 +1,117 @@
+.slider {
+  position: relative;
+  &__slide {
+    text-align: center;
+    position: relative;
+    padding-top: 30px;
+    padding-bottom: 40px;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    &:before {
+      content: '';
+
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+
+      background-color: rgba(0, 0, 0, .3);
+      border: 1px solid $color-1-0;
+    }
+  }
+  &__info {
+    display: inline-block;
+    padding: 4px 10px;
+    margin-bottom: 10px;
+
+    font-family: $roboto;
+    font-size: 13px;
+    font-weight: 500;
+
+    text-transform: uppercase;
+
+    background-color: $color-orange;
+    color: $color-white;
+  }
+  &__title {
+    margin-top: 0;
+    margin-bottom: 25px;
+
+    font-family: $roboto;
+    font-size: 35px;
+    font-weight: 600;
+
+    line-height: 35px;
+
+    color: $color-white;
+  }
+  &__description {
+    font-family: $arial;
+    font-size: 14px;
+    font-weight: 600;
+
+    line-height: 16px;
+
+    color: $color-white;
+  }
+
+  &-pagination {
+    position: absolute;
+    width: auto !important;
+    display: inline-block;
+    bottom: 20px !important;
+    left: 50% !important;
+    z-index: 30;
+
+    transform: translate(-50%) !important;
+
+    .swiper-pagination-bullet {
+      width: 11px;
+      height: 11px;
+
+      border: 1px solid $color-white;
+      border-radius: 0;
+
+      transition: border-color .3s, background-color .3s;
+    }
+    .swiper-pagination-bullet:hover {
+      background-color: $color-grey;
+      opacity: 1;
+    }
+    .swiper-pagination-bullet.swiper-pagination-bullet-active {
+      background-color: $color-orange;
+      border-color: $color-orange;
+    }
+  }
+
+  @media (min-width: $screen-sm) {
+    &__slide {
+      text-align: left;
+      padding-top: 60px;
+      padding-bottom: 70px;
+    }
+    &__info {
+      padding: 4px 10px;
+      margin-bottom: 10px;
+
+      font-size: 16px;
+    }
+    &__title {
+      margin-bottom: 25px;
+
+      font-size: 60px;
+
+      line-height: 48px;
+    }
+    &__description {
+      font-size: 16px;
+      font-weight: 600;
+
+      line-height: 23px;
+    }
+  }
+}

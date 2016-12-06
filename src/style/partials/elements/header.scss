@@ -1,0 +1,110 @@
+.header {
+  &__content {
+    padding-top: 22px;
+    padding-bottom: 14px;
+  }
+
+  &-search {
+    & {
+      height: 25px;
+
+      margin-top: 23px;
+    }
+    &__wrapper {
+      float: right;
+
+      width: 240px;
+      height: 100%;
+    }
+
+    &__wrap {
+      float: left;
+
+      height: 100%;
+    }
+
+    &__btn {
+      position: relative;
+
+      width: 30px;
+      height: 100%;
+
+      background-color: transparent;
+      border: 1px solid $color-1-1;
+      border-radius: 0 3px 3px 0;
+      border-left: none;
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    &__btn:hover  &__icon {
+      fill: $color-orange;
+    }
+
+    &__icon {
+      position: absolute;
+
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 15px;
+      height: 15px;
+
+      display: inline-block;
+      fill: $color-1-1;
+
+      transition: fill .3s;
+    }
+
+    &__input {
+      width: 210px;
+      float: left;
+
+      height: 100%;
+      border: 1px solid $color-1-1;
+
+      padding-left: 10px;
+      padding-right: 10px;
+
+      border-radius: 3px 0 0 3px;
+      border-right: none;
+
+
+      text-align: center;
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+
+  .logo {
+    &__img {
+      float: left;
+    }
+
+    &__info {
+      float: left;
+
+      margin-left: 10px;
+    }
+
+    &__title {
+      margin-top: 17px;
+      margin-bottom: 2px;
+
+      font-size: 24px;
+      font-family: $ubuntu;
+      font-weight: 700;
+
+      color: $color-orange;
+    }
+
+    &__description {
+      font-size: 12px;
+      color: $color-1-0;
+    }
+  }
+}

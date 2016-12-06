@@ -1,0 +1,71 @@
+.services {
+  
+  & {
+    border-bottom: 1px solid $color-1-2;
+  }
+
+  &-block {
+    width: 20%;
+
+    float: left;
+
+    padding: 38px 14px 47px;
+
+    cursor: pointer;
+
+    transition: background-color .3s;
+
+    &:hover {
+      background-color: $color-1-4;
+    }
+
+    &__icon {
+      display: block;
+      float: left;
+
+      width: 36px;
+
+      fill: $color-orange;
+    }
+
+    &__description {
+      font-size: 12px;
+      font-family: $roboto;
+      font-weight: 700;
+
+      color: $color-grey;
+
+      float: left;
+
+      margin-left: 10px;
+    }
+  }
+
+  @media (max-width: $screen-md) {
+    &-block {
+      float: left;
+
+      padding: 38px 14px 47px;
+
+      &__icon {
+        float: none;
+
+        margin: 0 auto;
+      }
+
+      &__description {
+        text-align: center;
+
+        float: none;
+      }
+    }
+  }
+  @media (max-width: $screen-sm) {
+    &-block {
+      width: 50%;
+
+      float: left;
+
+    }
+  }
+}

@@ -1,0 +1,22 @@
+body {
+  font-family: Roboto;
+  font-weight: 400;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: '';
+  clear: both;
+  display: table;
+}
+
+@media (min-width: $screen-md) {
+  .container {
+    max-width: 992px;
+  }
+}
